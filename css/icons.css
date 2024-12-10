@@ -1,0 +1,28 @@
+#icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin-top: 24px;
+    gap: 42px;
+}
+
+#icons i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border: 2px solid var(--text-color_links);
+    border-radius: 50%;
+    transition: .3s ease-in-out;
+}
+
+#icons a {
+    text-decoration: none;
+    color: var(--text-color_links);
+}
+
+#icons i:hover {
+    background-color: var(--bg-links_hover);
+}

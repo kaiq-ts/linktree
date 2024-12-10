@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --text-color: black;
+    --text-color_links: black;
+    --bg-links_hover: rgba(255, 255, 255, 1);
+    --bg-url: url(../img/sunshine_bg.webp);
+    --switch-bg_url: url(../img/bx-sun.svg);
+}
+
+.dark {
+    --text-color: aliceblue;
+    --text-color_links: aliceblue;
+    --bg-links_hover: rgba(1, 1, 1, 1);
+    --bg-url: url(../img/darkness_bg.webp);
+    --switch-bg_url: url(../img/bx-moon.svg);
+}
+
+body {
+    background: var(--bg-url) no-repeat center center;
+    background-size: cover;
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#container {
+    width: clamp(280px, 50%, 360px);
+    margin: 56px auto 0;
+}

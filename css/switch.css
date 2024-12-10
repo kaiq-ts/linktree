@@ -1,0 +1,60 @@
+#switch {
+    position: relative;
+    width: 64px;
+    margin: 0 auto;
+}
+
+#switch button {
+    width: 32px;
+    height: 32px;
+    background: white var(--switch-bg_url) no-repeat center;
+    border: none;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 1;
+    transform: translateY(-50%);
+    animation: slide-light 0.4s;
+}
+
+.dark #switch button {
+    animation: slide-dark 0.4s forwards;
+}
+
+#switch button:hover {
+    outline: 8px solid rgba(1, 1, 1, 0.2);
+}
+
+.dark #switch button:hover {
+    outline: 8px solid rgba(255, 255, 255, 0.2)
+}
+
+#switch span {
+    display: block;
+    width: 64px;
+    height: 24px;
+    background: rgba(1, 1, 1, 0.2);
+    border: 2px solid var(--text-color_links);
+    border-radius: 9999px;
+}
+
+@keyframes slide-dark {
+    from {
+        left: 0;
+    }
+
+    to {
+        left: 50%;
+    }
+}
+
+@keyframes slide-light {
+    from {
+        left: 50%;
+    }
+
+    to {
+        left: 0;
+    }
+}

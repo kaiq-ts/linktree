@@ -1,0 +1,29 @@
+#link_list {
+    margin-top: 24px;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0 48px;
+    gap: 12px;
+}
+
+ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--text-color_links);
+    border-radius: 6px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--text-color_links);
+    padding: 12px;
+    transition: background .2s ease-in-out;
+}
+
+ul li a:hover {
+    background-color: var(--bg-links_hover);
+}
