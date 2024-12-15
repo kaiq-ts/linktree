@@ -7,17 +7,25 @@
 :root {
     --text-color: black;
     --text-color_links: black;
+    --color-white: white;
     --bg-links_hover: rgba(255, 255, 255, 1);
     --bg-url: url(../img/sunshine_bg.webp);
     --switch-bg_url: url(../img/bx-sun.svg);
+    --switch-bg_color: rgba(1, 1, 1, 0.2);
+    --switch-hover_color: rgba(255, 255, 255, 0.2);
+    --font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    --text-profile: bold 1.125rem/150% var(--font-family);
+    --text-links: bold 1rem/150% var(--font-family);
+    --text-footer: bold clamp(1rem, 2vw, 1.25rem)/150% var(--font-family);
 }
 
 .dark {
-    --text-color: aliceblue;
-    --text-color_links: aliceblue;
+    --text-color: white;
+    --text-color_links: white;
     --bg-links_hover: rgba(1, 1, 1, 1);
     --bg-url: url(../img/darkness_bg.webp);
     --switch-bg_url: url(../img/bx-moon.svg);
+    --text-profile: bold 1.125rem/150% var(--font-family);
 }
 
 body {
@@ -26,6 +34,7 @@ body {
     margin: 0;
     height: 100vh;
     overflow: hidden;
+    font-family: var(--font-family);
 }
 
 #container {
